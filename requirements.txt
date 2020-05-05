@@ -1,0 +1,5 @@
+pytest
+mock
+contextvars
+boto3
+kafka-python
