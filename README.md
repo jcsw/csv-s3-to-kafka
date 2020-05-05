@@ -1,1 +1,1 @@
-# Load CSV from S3 and send to Kafka topic
+# Python project to read csv file on AWS s3 and post in Kafka topic
