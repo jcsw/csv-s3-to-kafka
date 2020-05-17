@@ -9,11 +9,11 @@ from app import config
 class KafkaEngineTest(TestCase):
 
     @patch.dict('os.environ',
-                     {'kafka_server': 'localhost',
-                      'kafka_producer_timeout': '3',
-                      'kafka_producer_retry': '2',
-                      'kafka_flush_timeout': '3',
-                      'kafka_close_timeout': '3'})
+                {'kafka_server': 'localhost',
+                 'kafka_producer_timeout': '3',
+                 'kafka_producer_retry': '2',
+                 'kafka_flush_timeout': '3',
+                 'kafka_close_timeout': '3'})
     def test_send_to_csv_data_topic(self):
         config.init()
 
