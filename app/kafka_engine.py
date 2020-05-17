@@ -17,4 +17,4 @@ class KafkaEngine:
 
     def close(self):
         self.producer.flush(config.kafka_flush_timeout.get())
-        self.producer.close(config.kafka_flush_timeout.get())
+        self.producer.close(config.kafka_close_timeout.get())
